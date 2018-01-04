@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<title>伊美特</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/lunbo.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.slimscroll.min.js" ></script>
+		<script type="text/javascript" src="js/slider.js" ></script>
+	</head>
+
+	<body>
+		<div class="active" style="background: url(img/service/bannerbg.png) 50% 50%;background-size: cover;height: 780px;">
+			<!-- 导航 -->
+			<div class="nav" style="position: absolute;top: 0;width: 100%;">
+				<div class="m" style="position: relative;">
+					<div class="logo">
+						<a href="index.html"><img src="img/logo2.png"></a>
+					</div>
+					<div class="nav_c">
+						<ul style="float: left;">
+							<li>
+								<a href="Index.html">首页</a>
+							</li>
+							<li>
+								<a href="AboutUs.html">关于我们</a>
+							</li>
+							<li>
+								<a href="Prodet.html">产品介绍</a>
+							</li>
+							<li style="background: url(img/nav_bg.png);">
+								<a style="color: #FFF;" href="Service.html">服务中心</a>
+							</li>
+							<li>
+								<a href="Brand.html">旗下品牌</a>
+							</li>
+							<li>
+								<a href="News.html">新闻资讯</a>
+							</li>
+							<li>
+								<a href="ContantUs.html">联系我们</a>
+							</li>
+						</ul>
+						<div style="float: left; padding-left: 12px; padding-top: 30px;">|</div>
+						<a href="" style="float:left;">
+							<img src="img/qqw.png" style="float: left; padding: 0 14px; padding-top: 30px;">
+						</a>
+						<div style="float: left; padding-right: 14px; padding-top: 30px;">
+							<a href="?l=zh-cn">中文版</a>
+						</div>
+						<div style="float: left; padding-right: 14px; padding-top: 30px;">|</div>
+						<div style="float:left; padding-top: 30px;">
+							<a href="?l=en-us">English</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- 导航 End -->
+
+		</div>
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				var st = $(this).scrollTop();
+				if(st > 0) {
+					$('.product_cc').css('opacity', '1');
+				}
+			})
+		</script>
+
+		</div>
+		<div class="active product_cc" style="opacity :0">
+			<div class="service">
+				<p class="fwzx">服务中心</p>
+				<p style="text-align: center; font-size: 13px; color: #8d8e8e;">提供全方位服务，让客户获得更好的用户体验</p>
+				<div class="alls" style="height: 900px; width: 100%; background: #f2f2f2;">
+
+					<p style="line-height: 77px; text-align: center; font-size: 18px; padding-top: 80px;">私<span style="line-height: 40px;display: inline-block;border-bottom: 1px solid #000">人定</span>制</p>
+					<p style="text-align:center;line-height: 24px;">伊美特是国家高新技术企业，是行业内公认的家用净水机整机和配件生产超全的企业，产品95%以上零部件皆自主研发、自主生产。</p>
+					<p style="text-align:center;line-height: 24px;">公司与国内外众多知名品牌合作，提供设计、研发，开模，定制等一系列深度合作。</p>
+					<p style="text-align:center;line-height: 24px;">伊美特拥有多项专利核心技术，采用创新的制造工艺，产品功能及外观独特，并可以针对不同地区水质差异，为客户量身定制不同类别，不同功能的产品，</p>
+					<p style="text-align:center;line-height: 24px;">让您独享市场话语权，坐享丰厚回报，伊美特为您保障市场稳定持续发展，让您具备市场的竞争优势提供保证。凭着</p>
+					<p style="text-align:center;line-height: 24px;">优异的品质，完善的服务，多年来伊美特赢得国内外众知名企业的推崇。</p>
+					<div class="x">
+						<div class="banner" id="top">
+							<div id="banner_tabs" class="flexslider">
+								<ul class="slides">
+									<li>
+										<a href="javascript:void(0)">
+											<img width="976" height="380" alt="" style="background: url(img/service/dz1.png) no-repeat center;">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<img width="976" height="380" alt="" style="background: url('img/service/dz2.png') no-repeat center;">
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<img width="976" height="380" alt="" style="background: url('img/service/dz3.png') no-repeat center;">
+										</a>
+									</li>
+								</ul>
+								<ul class="flex-direction-nav">
+									<li>
+										<a class="flex-prev" href="javascript:;">Previous</a>
+									</li>
+									<li>
+										<a class="flex-next" href="javascript:;">Next</a>
+									</li>
+								</ul>
+								<div class="m" style="width:50px;">
+									<ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+										<li class="active3">
+											<a>1</a>
+										</li>
+										<li>
+											<a>2</a>
+										</li>
+										<li>
+											<a>3</a>
+										</li>
+									</ol>
+								</div>
+							</div>
+							<script type="text/javascript">
+								$(function() {
+									var bannerSlider = new Slider($('#banner_tabs'), {
+										time: 5000,
+										delay: 400,
+										event: 'hover',
+										auto: true,
+										mode: 'fade',
+										controller: $('#bannerCtrl'),
+										activeControllerCls: 'active3'
+									});
+									$('#banner_tabs .flex-prev').click(function() {
+										bannerSlider.prev()
+									});
+									$('#banner_tabs .flex-next').click(function() {
+										bannerSlider.next()
+									});
+								})
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="active">
+			<div class="solution">
+				<p style="line-height: 77px; text-align: center; font-size: 18px;">全屋<span style="line-height: 40px;display: inline-block;border-bottom: 1px solid #000">净水</span>方案</p>
+				<p style="text-align: center;">全屋净水方案，是根据用户需求、水质数据、住宅格局，进行全屋水路设计，采用不锈钢管道系统连接市场上各类涉水功能设备系统</p>
+				<p style="text-align: center;">（净水器、热水器、水泵等）和适合的出水产品系统（如不锈钢水槽、不锈钢龙头、不锈钢淋浴花洒等）</p>
+				<p style="text-align: center;">而量身打造的全屋净水方案。</p>
+				<img src="img/service/serbotimg.png"> </div>
+
+			<a href="#" style="position: absolute; right:50px;z-index: 2" id="div1"><img src="img/34.png"></a>
+			<script>
+				window.onscroll = function() {
+					var oDiv = document.getElementById('div1');
+					var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+					//oDiv.style.top = scrollTop + ( document.documentElement.clientHeight - oDiv.offsetHeight )/2 +'px';
+					var t = scrollTop + (document.documentElement.clientHeight - oDiv.offsetHeight) / 2;
+					startMove(parseInt(t));
+				}
+
+				var timer = null;
+
+				function startMove(iTarget) {
+					var oDiv = document.getElementById('div1');
+					clearInterval(timer);
+					timer = setInterval(function() {
+						var iSpeed = (iTarget - oDiv.offsetTop) / 8;
+						iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+						if(oDiv.offsetTop == iTarget) {
+							clearInterval(timer);
+						} else {
+							oDiv.style.top = oDiv.offsetTop + iSpeed + 'px';
+						}
+					}, 30)
+				}
+			</script>
+			<script>
+				$(window).scroll(function() {
+					var st = $(this).scrollTop();
+					if(st > 300) {
+						$('#div1').css('display', 'block');
+					}
+					if(st < 300) {
+						$('#div1').css('display', 'none');
+					}
+				});
+			</script>
+
+			<div class="footer" style="margin-top: 66px;">
+				<div class="footer_c">
+					<div class="footer_l">
+						<img src="img/fl_03.png">
+						<ul>
+							<li>
+								<a href="Index.html">首页</a>
+							</li>
+							<li>
+								<a href="AboutUs.html">关于我们</a>
+							</li>
+							<li>
+								<a href="Prodet.html">产品介绍</a>
+							</li>
+							<li>
+								<a href="Service.html">服务中心</a>
+							</li>
+							<li>
+								<a href="Brand.html">旗下品牌</a>
+							</li>
+							<li>
+								<a href="News.html">新闻资讯</a>
+							</li>
+							<li>
+								<a href="ContantUs.html">联系我们</a>
+							</li>
+						</ul><br>
+						<p style="padding-left: 26px; float: left; line-height: 26px;">伊美特(上海)环保科技股份有限公司</p>
+
+					</div>
+
+					<div class="footer_r">
+						<span>地址：上海市闵行区纪翟路1418号</span><br/>
+						<span>电话：400-820-5617</span><br>
+						<span>Copyright © 2016 伊美特（上海）环保科技股份有限公司</span>
+						<span>沪ICP备11005546号-3</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</div>
+
+	</body>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>伊美特</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/jquery-ui-theme.min.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+		<script>
+			$(function() {
+				var icons = {
+					header: "ui-icon-circle-arrow-e",
+					activeHeader: "ui-icon-circle-arrow-s"
+				};
+				$("#accordion").accordion({
+					icons: icons
+				});
+				$("#toggle").button().click(function() {
+					if($("#accordion").accordion("option", "icons")) {
+						$("#accordion").accordion("option", "icons", null);
+					} else {
+						$("#accordion").accordion("option", "icons", icons);
+					}
+				});
+				$("#accordion").accordion({
+					collapsible: true
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<!-- 导航 -->
+		<div class="nav" style="position: absolute;top: 0;width: 100%;">
+			<div class="m" style="position: relative;">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo2.png"></a>
+				</div>
+				<div class="nav_c">
+					<ul style="float: left;">
+						<li>
+							<a href="Index.html">首页</a>
+						</li>
+						<li style="background: url(img/nav_bg.png);">
+							<a style="color: #FFF" href="AboutUs.html">关于我们</a>
+						</li>
+						<li>
+							<a href="Prodet.html">产品介绍</a>
+						</li>
+						<li>
+							<a href="Service.html">服务中心</a>
+						</li>
+						<li>
+							<a href="Brand.html">旗下品牌</a>
+						</li>
+						<li>
+							<a href="News.html">新闻资讯</a>
+						</li>
+						<li>
+							<a href="ContantUs.html">联系我们</a>
+						</li>
+					</ul>
+					<div style="float: left; padding-left: 12px; padding-top: 30px;">|</div>
+					<a href="tencent://message/?uin=307035099&Site=www.woyouli.com&Menu=yes" style="float:left;"><img src="img/qqw.png" style="float: left; padding: 0 14px; padding-top: 30px;"></a>
+					<div style="float: left; padding-right: 14px; padding-top: 30px;">
+						<a href="?l=zh-cn">中文版</a>
+					</div>
+					<div style="float: left; padding-right: 14px; padding-top: 30px;">|</div>
+					<div style="float:left; padding-top: 30px;">
+						<a href="?l=en-us">English</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航 End -->
+		<!-- banner -->
+		<div class="banner2" style="background: url(img/contact/joinusb_02.png); height: 700px; background-size: cover">
+			<div class="x" style="height: 700px;vertical-align: middle;">
+				<div class="news_info" style="height: 700px;"><img id="jil" src="img/contact/joinus.png" style="vertical-align: middle; display: inline-block; margin-top: 320px;margin-left: -300px;transition: all 2s ease-in-out;-webkit-transition: all 2s ease-in-out; -moz-transition: all 2s ease-in-out; opacity:0"></div>
+			</div>
+		</div>
+		<!-- banner End -->
+		<div class="news_content">
+			<div class="newsh">
+				<p align="center" class="main_title">加入我们</p>
+				<p align="center" class="sub_title">以科技为向导，以创新求发展！</p>
+				<p align="center" class="tac" style="margin-top: 46px; algin:center">伊美特是一支年轻、时尚、头脑敏锐、朝气蓬勃的团队。他们充满活力、彰显个性，又愿意为远大的理想而付出脚踏实地的努力！如果您对自己的创造力、</p>
+				<p align="center" class="tac">学习力充满信心，又相信“态度决定一切”的真理，愿付出辛勤的汗水去实现个人在专业领域内的职业化，这里将是您职业加速的优质跑道、</p>
+				<p align="center" class="tac">梦想起飞的良好平台。为了您和伊美特共同的美好明天，让我们携手！</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$('#jil').css('marginLeft', '0');
+				$('#jil').css('opacity', '1');
+			})
+			$(window).scroll(function() {
+				var st = $(this).scrollTop();
+				if(st > 0) {
+					$('.newsh').css('paddingTop', '60px');
+					$('.newsh').css('opacity', '1');
+					$('#accordion').css('opacity', '1');
+				}
+			})
+		</script>
+		<div class="x">
+			<div id="accordion" style="margin-top: 40px; font-size: 14px;font-family: 微软雅黑;line-height: 26px; color: #333333;">
+				<h3 style="height: 55px;line-height: 55px; border-right: 0;border-left: 0; border-radius: 0;">&nbsp;&nbsp;&nbsp;品管检验员<span style="float: right;">&nbsp;&nbsp;&nbsp;2016-05-23&nbsp;&nbsp;&nbsp;</span><span style="float: right;">&nbsp;&nbsp;&nbsp;3名&nbsp;&nbsp;&nbsp;|</span><span style="float: right;">品管部&nbsp;&nbsp;&nbsp;|</span></h3>
+				<div style="padding: 30px 50px 80px 50px; border: 0">
+					<p style="padding:0 0 8px 0;">工作地点：上海</p>
+					<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">任职资格：</span></p>
+					<p style="line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">1、中专及以上学历，一年相关工作经验；</span></p>
+					<p style="line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">2、需要熟练使用各种量具；&nbsp;</span></p>
+					<p style="line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">3、了解品质控制常用手法及ISO9001标准体系；</span></p>
+					<p style="line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">4、能吃苦耐劳。</span></p>
+					<p><br/></p>
+					<a href="#">
+						<div class="bluebtn" style="position: relative; margin-top: 20px; margin-bottom: 30px;background: #80caf7; width:400px;"> 立即应聘（请在邮件附件及正文中都添加简历信息）
+						</div>
+					</a>
+				</div>
+				<h3 style="height: 55px;line-height: 55px; border-right: 0;border-left: 0; border-radius: 0;">&nbsp;&nbsp;&nbsp;生产车间主管 / 生产管理部经理<span style="float: right;">&nbsp;&nbsp;&nbsp;2016-05-23&nbsp;&nbsp;&nbsp;</span><span style="float: right;">&nbsp;&nbsp;&nbsp;2名&nbsp;&nbsp;&nbsp;|</span><span style="float: right;">生管部&nbsp;&nbsp;&nbsp;|</span></h3>
+				<div style="padding: 30px 50px 80px 50px; border: 0">
+					<p style="padding:0 0 8px 0;">工作地点：上海</p>
+					<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">职位描述:<br/>1、对新进员工进行岗位培训和5S培训，现场教工人每种产品的操作。<br/>2、对发现的质量问题现场解决。<br/>3、定期召开质量工作会议,用&quot;人,机,物,法,环&quot;质量分析法来分析总结发生的质量问题,找到原因和解决办法.做好纠正预防措施。<br/>4、组织车间生产。<br/>5、生产过程中的质量控制。<br/>6、车间日常设备保养。<br/>7、生产过程的成本管理；车间内安全与环境管理。</span></p>
+					<p><br/></p>
+					<a href="#">
+						<div class="bluebtn" style="position: relative; margin-top: 20px; margin-bottom: 30px;background: #80caf7; width:400px;"> 立即应聘（请在邮件附件及正文中都添加简历信息）
+						</div>
+					</a>
+				</div>
+				<h3 style="height: 55px;line-height: 55px; border-right: 0;border-left: 0; border-radius: 0;">&nbsp;&nbsp;&nbsp;sop标准化作业员<span style="float: right;">&nbsp;&nbsp;&nbsp;2016-05-23&nbsp;&nbsp;&nbsp;</span><span style="float: right;">&nbsp;&nbsp;&nbsp;2名&nbsp;&nbsp;&nbsp;|</span><span style="float: right;">品管部&nbsp;&nbsp;&nbsp;|</span></h3>
+				<div style="padding: 30px 50px 80px 50px; border: 0">
+					<p style="padding:0 0 8px 0;">工作地点：上海</p>
+					<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">1、系统的作业观察、收集生产作业信息，并保存相关数据或资料；</span></p>
+					<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">2、依照数据和资料对分解版、制程版标准作业书进行编制；</span></p>
+					<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">3、对标准作业书的更新工作；</span></p>
+					<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">4、生产现场使用过程中对标准作业的维护及监管；</span></p>
+					<p style="margin-top: 0px; margin-bottom: 0px; line-height: 2em;"><span style="font-family: 宋体; font-size: 18px;">5、看板管理、数据收集及维护等工作；</span></p>
+					<p style="line-height: 2em;"><br/></p>
+					<a href="#">
+						<div class="bluebtn" style="position: relative; margin-top: 20px; margin-bottom: 30px;background: #80caf7; width:400px;"> 立即应聘（请在邮件附件及正文中都添加简历信息）
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--<ul id="pages">
+				<li>
+					<a class='active2' href='#'>1</a>
+				</li>
+				<li>
+					<a href='/index.php/contact/recruit/p/2.html'>2</a>
+				</li>
+				<li>
+					<a href='/index.php/contact/recruit/p/3.html'>3</a>
+				</li>
+				<li>
+					<a href='/index.php/contact/recruit/p/4.html'>4</a>
+				</li>
+				<li>
+					<a href='/index.php/contact/recruit/p/2.html'>&gt;</a>
+				</li>
+			</ul>-->
+		</div>
+		<a href="#" style="position: absolute; right:50px;z-index: 2" id="div1"><img src="img/34.png"></a>
+		<script>
+			$('.yy').click(function() {
+				$(this).attr('src', 'img/contact/zsa.png')
+			})
+		</script>
+		<script>
+			window.onscroll = function() {
+				var oDiv = document.getElementById('div1');
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				//oDiv.style.top = scrollTop + ( document.documentElement.clientHeight - oDiv.offsetHeight )/2 +'px';
+				var t = scrollTop + (document.documentElement.clientHeight - oDiv.offsetHeight) / 2;
+				startMove(parseInt(t));
+			}
+
+			var timer = null;
+
+			function startMove(iTarget) {
+				var oDiv = document.getElementById('div1');
+				clearInterval(timer);
+				timer = setInterval(function() {
+					var iSpeed = (iTarget - oDiv.offsetTop) / 8;
+					iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+					if(oDiv.offsetTop == iTarget) {
+						clearInterval(timer);
+					} else {
+						oDiv.style.top = oDiv.offsetTop + iSpeed + 'px';
+					}
+				}, 30)
+			}
+		</script>
+		<script>
+			$(window).scroll(function() {
+				var st = $(this).scrollTop();
+				if(st > 300) {
+					$('#div1').css('display', 'block');
+				}
+				if(st < 300) {
+					$('#div1').css('display', 'none');
+				}
+			});
+		</script>
+		<div class="footer" style="position:relative;float: left; clear: both; margin-top: 66px;">
+			<div class="footer_c">
+				<div class="footer_l"><img src="img/fl_03.png">
+					<ul>
+							<li>
+								<a href="Index.html">首页</a>
+							</li>
+							<li>
+								<a href="AboutUs.html">关于我们</a>
+							</li>
+							<li>
+								<a href="Prodet.html">产品介绍</a>
+							</li>
+							<li>
+								<a href="Service.html">服务中心</a>
+							</li>
+							<li>
+								<a href="Brand.html">旗下品牌</a>
+							</li>
+							<li>
+								<a href="News.html">新闻资讯</a>
+							</li>
+							<li>
+								<a href="ContantUs.html">联系我们</a>
+							</li>
+						</ul><br>
+					<p style="padding-left: 26px; float: left; line-height: 26px;">伊美特(上海)环保科技股份有限公司</p>
+				</div>
+				<div class="footer_r"><span>地址：上海市闵行区纪翟路1418号</span><br/><span>电话：400-820-5617</span><br><span>Copyright © 2016 伊美特（上海）环保科技股份有限公司</span><span>沪ICP备11005546号-3</span></div>
+			</div>
+		</div>
+		<!-- 页脚 End -->
+	</body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/lunbo.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/slider.js" ></script>
+		<title>伊美特</title>
+	</head>
+
+	<body>
+		<!-- 导航 -->
+		<div class="nav">
+			<div class="m" style="position: relative;">
+				<div class="logo">
+					<a href="Index.html"><img src="img/logo2.png"></a>
+				</div>
+				<div class="nav_c">
+					<ul style="float: left;">
+						<li>
+							<a href="Index.html">首页</a>
+						</li>
+						<li>
+							<a href="AboutUs.html">关于我们</a>
+						</li>
+						<li style="background: url(img/nav_bg.png);">
+							<a style="color: #FFF;" href="Prodet.html">产品介绍</a>
+						</li>
+						<li>
+							<a href="Service.html">服务中心</a>
+						</li>
+						<li>
+							<a href="Brand.html">旗下品牌</a>
+						</li>
+						<li>
+							<a href="News.html">新闻资讯</a>
+						</li>
+						<li>
+							<a href="ContantUs.html">联系我们</a>
+						</li>
+					</ul>
+					<div style="float: left; padding-left: 12px; padding-top: 30px;">|</div>
+					<a href="#" style="float:left;"><img src="img/qqw.png" style="float: left; padding: 0 14px; padding-top: 30px;"></a>
+					<div style="float: left; padding-right: 14px; padding-top: 30px;">
+						<a href="?l=zh-cn">中文版</a>
+					</div>
+					<div style="float: left; padding-right: 14px; padding-top: 30px;">|</div>
+					<div style="float:left; padding-top: 30px;">
+						<a href="?l=en-us">English</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航 End -->
+		<!-- banner -->
+		<div class="banner2" style="background: url(img/prodact/bannerbg.png) 50% 50%; height: 700px; background-size: cover">
+			<div class="x" style="height: 700px;vertical-align: middle;">
+				<div class="news_info" style="height: 700px;"><img id="jil" src="img/prodact/news_info.png" style="vertical-align: middle; display: inline-block; margin-top: 320px;margin-left: -300px;transition: all 2s ease-in-out;-webkit-transition: all 2s ease-in-out; opacity:0"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				var st = $(this).scrollTop();
+				if(st > 0) {
+					$('.product_cc').css('opacity', '1');
+				}
+			})
+		</script>
+		<div class="product_cc" id="main">
+			<div class="x">
+				<p id="prodetitle" style="line-height: 116px; text-align: center; font-size: 16px;">— 膜系列 —</p>
+				<ul class="slides" style="border: 0; border-top: 1px solid #CCC; width: 976px; height: 1423px;">
+					<li id="myside1" class="myslidesli" >
+						<img src="img/contact/prodeaimg0.jpg">
+					</li>
+					<li id="myside2" class="myslidesli" >
+						<img src="img/contact/prodeaimg1.jpg">
+					</li>
+					<li id="myside3" class="myslidesli" >
+						<img src="img/contact/prodeaimg2.jpg">
+					</li>
+					<li id="myside4" class="myslidesli" >
+						<img  src="img/contact/prodeaimg3.jpg">
+					</li>
+					<li  id="myside5" class="myslidesli" >
+						<img  src="img/contact/prodeaimg4.jpg">
+					</li>
+					<li id="myside6" class="myslidesli" >
+						<img src="img/contact/prodeaimg5.jpg">
+					</li>
+					<li id="myside7" class="myslidesli" >
+						<img src="img/contact/prodeaimg6.jpg">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<ul id="pages" style="width: 300px; margin: 0 auto; padding-top: 10px;"> </ul>
+		</div>
+		<a href="#" style="position: absolute; right:50px;z-index: 2" id="div1"><img src="img/34.png"></a>
+		<script>
+			window.onscroll = function() {
+				var oDiv = document.getElementById('div1');
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				//oDiv.style.top = scrollTop + ( document.documentElement.clientHeight - oDiv.offsetHeight )/2 +'px';
+				var t = scrollTop + (document.documentElement.clientHeight - oDiv.offsetHeight) / 2;
+				startMove(parseInt(t));
+			}
+
+			var timer = null;
+
+			function startMove(iTarget) {
+				var oDiv = document.getElementById('div1');
+				clearInterval(timer);
+				timer = setInterval(function() {
+					var iSpeed = (iTarget - oDiv.offsetTop) / 8;
+					iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+					if(oDiv.offsetTop == iTarget) {
+						clearInterval(timer);
+					} else {
+						oDiv.style.top = oDiv.offsetTop + iSpeed + 'px';
+					}
+				}, 30)
+			}
+		</script>
+		<script>
+			$(window).scroll(function() {
+				var st = $(this).scrollTop();
+				if(st > 300) {
+					$('#div1').css('display', 'block');
+				}
+				if(st < 300) {
+					$('#div1').css('display', 'none');
+				}
+			});
+		</script>
+		<!-- 页脚 -->
+		<div class="footer" style="position:initial;float: left;margin-top:66px;">
+			<div class="footer_c">
+				<div class="footer_l"><img src="img/fl_03.png">
+					<ul>
+						<li>
+							<a href="Index.html">首页</a>
+						</li>
+						<li>
+							<a href="AboutUs.html">关于我们</a>
+						</li>
+						<li>
+							<a href="Prodet.html">产品介绍</a>
+						</li>
+						<li>
+							<a href="Service.html">服务中心</a>
+						</li>
+						<li>
+							<a href="Brand.html">旗下品牌</a>
+						</li>
+						<li>
+							<a href="News.html">新闻资讯</a>
+						</li>
+						<li>
+							<a href="ContantUs.html">联系我们</a>
+						</li>
+					</ul><br>
+					<p style="padding-left: 26px; float: left; line-height: 26px;">伊美特(上海)环保科技股份有限公司</p>
+				</div>
+				<div class="footer_r"><span>地址：上海市闵行区纪翟路1418号</span><br/><span>电话：400-820-5617</span><br><span>Copyright © 2016 伊美特（上海）环保科技股份有限公司</span><span>沪ICP备11005546号-3</span></div>
+			</div>
+		</div>
+		<!-- 页脚 End -->
+		<ul id="bluenav" style="display:none;"><img src="img/contact/drop_03.jpg" style="position: relative; left:-5px; ">
+			<li>
+				<a title="膜系列">膜系列</a>
+			</li>
+			<li>
+				<a title="增压泵系列">增压泵系列 </a>
+			</li>
+			<li>
+				<a title="压力桶系列"> 压力桶系列</a>
+			</li>
+			<li>
+				<a title="滤芯耗材系列">滤芯耗材系列</a>
+			</li>
+			<li>
+				<a title="滤瓶膜壳系列">滤瓶膜壳系列</a>
+			</li>
+			<li>
+				<a title="接头系列">接头系列</a>
+			</li>
+			<li>
+				<a title="其他系列">其他系列</a>
+			</li>
+			<li style="background:#1d85c6; width:150px; position:absolute; left:0;color: #fff;">
+				400-820-5617
+			</li>
+		</ul>
+		<script>
+			$(function() {
+				//判断点击锚点
+				var thisurl=window.location.hash;
+				if(thisurl.indexOf("myside1")>0){
+					$(".product_cc li").hide();
+					$(".product_cc li").eq(0).show();
+					$("#prodetitle").html("—— 膜系列 ——");
+				}
+				else if(thisurl.indexOf("myside2")>0){
+					$(".product_cc li").hide();
+					$(".product_cc li").eq(1).show();
+					$("#prodetitle").html("—— 增压泵系列 ——");
+				}
+				else if(thisurl.indexOf("myside3")>0){
+					$(".product_cc li").hide();
+					$(".product_cc li").eq(2).show();
+					$("#prodetitle").html("—— 压力桶系列 ——");
+				}
+				else if(thisurl.indexOf("myside4")>0){
+					$(".product_cc li").hide();
+					$(".product_cc li").eq(3).show();
+					$("#prodetitle").html("—— 滤芯耗材系列 ——");
+				}
+				else if(thisurl.indexOf("myside5")>0){
+					$(".product_cc li").hide();
+					$(".product_cc li").eq(4).show();
+					$("#prodetitle").html("—— 滤瓶膜壳系列 ——");
+				}
+				else if(thisurl.indexOf("myside6")>0){
+					$(".product_cc li").hide();
+					$(".product_cc li").eq(5).show();
+					$("#prodetitle").html("—— 接头系列 ——");
+				}
+				else if(thisurl.indexOf("myside7")>0){
+					$(".product_cc li").hide();
+					$(".product_cc li").eq(6).show();
+					$("#prodetitle").html("—— 其他系列 ——");
+				}
+				else{
+						$(".product_cc li").eq(0).show();
+				}			
+				//左边选项卡
+				
+				$("#bluenav li").click(function(){
+					var thisindex=$(this).index()-1;
+					$(".product_cc li").eq(thisindex).show().siblings().hide();
+//					var prodetitle=$("#bluenav li a").html();
+					var prodetitle=$(this).children("a").html();
+					//alert(prodetitle);
+					$("#prodetitle").html("—— "+prodetitle+" ——");
+				});
+				
+				$(window).scroll(
+
+					function() {
+
+						var st = $(window).scrollTop();
+
+						if(st < 300) {
+
+							$('#bluenav').css('display', 'none');
+						}
+
+						if(st > 300) {
+
+							$('#bluenav').css('display', 'block');
+						}
+
+					}
+				)
+			})
+		</script>
+	</body>
+
+</html>

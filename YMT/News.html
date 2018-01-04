@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>伊美特</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	</head>
+
+	<body>
+
+		<!-- 导航 -->
+
+		<div class="nav">
+			<div class="m" style="position: relative;">
+				<div class="logo">
+					<a href="Index.html"><img src="img/logo2.png"></a>
+				</div>
+				<div class="nav_c">
+					<ul style="float: left;">
+						<li>
+							<a href="Index.html">首页</a>
+						</li>
+						<li>
+							<a href="AboutUs.html">关于我们</a>
+						</li>
+						<li>
+							<a href="Prodet.html">产品介绍</a>
+						</li>
+						<li>
+							<a href="Service.html">服务中心</a>
+						</li>
+						<li>
+							<a href="Brand.html">旗下品牌</a>
+						</li>
+						<li style="background: url(img/nav_bg.png);">
+							<a style="color: #FFF" href="News.html">新闻资讯</a>
+						</li>
+						<li>
+							<a href="ContantUs.html">联系我们</a>
+						</li>
+					</ul>
+					<div style="float: left; padding-left: 12px; padding-top: 30px;">|</div>
+					<a href="#" style="float:left;"><img src="img/qqw.png" style="float: left; padding: 0 14px; padding-top: 30px;"></a>
+					<div style="float: left; padding-right: 14px; padding-top: 30px;">
+						<a href="?l=zh-cn">中文版</a>
+					</div>
+					<div style="float: left; padding-right: 14px; padding-top: 30px;">|</div>
+					<div style="float:left; padding-top: 30px;">
+						<a href="?l=en-us">English</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 导航 End -->
+
+		<!-- banner -->
+
+		<div class="banner2" style="background: url('img/contact/cont_banner.png')50% 50%; height: 700px; background-size: cover">
+			<div class="x" style="height: 700px;vertical-align: middle;">
+				<div class="news_info" style="height: 700px;">
+					<img id="jil" src="img/contact/cont_news_info.png" style="vertical-align: middle; display: inline-block; margin-top: 320px;margin-left: -300px;transition: all 2s ease-in-out;-webkit-transition: all 2s ease-in-out; -moz-transition: all 2s ease-in-out; opacity:0">
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				$('#jil').css('marginLeft', '0');
+				$('#jil').css('opacity', '1');
+			})
+			$(window).scroll(function() {
+				var st = $(this).scrollTop();
+				if(st > 0) {
+					$('.newsh').css('paddingTop', '60px');
+					$('.newsh').css('opacity', '1');
+					$('.news_all').css('opacity', '1')
+				}
+			})
+		</script>
+
+		<!-- banner End -->
+
+		<!-- 新闻资讯 -->
+
+		<div class="news_content" id="zz">
+			<div class="newsh">
+				<p class="main_title">公司新闻</p>
+				<p class="sub_title">了解最新、最全的行业信息</p>
+				<!--<ul id="blue_btn" style="margin-top: 46px; margin-bottom: 50px;">
+					<a style="color: #FFF" href="">
+						<li style="margin-left: 300px;" class="active2">公司新闻</li>
+					</a>
+					<a href="">
+						<li>行业新闻</li>
+					</a>
+					<a href="">
+						<li>水与健康</li>
+					</a>
+				</ul>-->
+				<div style="margin-top: 46px; margin-bottom: 50px;"></div>
+			</div>
+			<!--新闻-->
+			<div class="news_all">
+				<dl>
+					<dt><img width="234" height="155" src="img/contact/news1img1.png"></dt>
+					<dd>
+						<p class="new_t">伊美特超低压反渗透膜技术引爆市场——上海伊美特超低压反渗透膜技术鉴定会暨产品新闻发布会</p>
+					</dd>
+					<dd>
+						<p class="news_cx">　　2015年9月18日，一家来自上海的国家级高新技术企业，上海伊美特实业有限公司，于北京香格里拉隆重举行新闻发布会，他们95%的净水器配件均自主研发、生产，他们不断创新、追求卓越，是志力于将中国制造</p>
+					</dd>
+					<dd>
+						<a href="News_detail.html">
+							<img src="img/contact/read_btn_09.png">
+						</a>
+					</dd>
+				</dl>
+				<ul id="pages">
+					<li><a href="#">&lt;</a></li>
+					<li><a class="active2" href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">&gt;</a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$('.news_all').find('dl').mouseover(function() {
+					$(this).find('dd').find('img').attr('src', 'img/contact/read_on_08.png')
+				})
+				$('.news_all').find('dl').mouseout(function() {
+					$(this).find('dd').find('img').attr('src', 'img/contact/read_btn_09.png')
+				})
+			})
+		</script>
+
+		<!-- 新闻资讯 End -->
+
+		<a href="#" style="position: absolute; right:50px;z-index: 2" id="div1"><img src="img/34.png"></a>
+
+		<script>
+			window.onscroll = function() {
+				var oDiv = document.getElementById('div1');
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				//oDiv.style.top = scrollTop + ( document.documentElement.clientHeight - oDiv.offsetHeight )/2 +'px';
+				var t = scrollTop + (document.documentElement.clientHeight - oDiv.offsetHeight) / 2;
+				startMove(parseInt(t));
+			}
+
+			var timer = null;
+
+			function startMove(iTarget) {
+				var oDiv = document.getElementById('div1');
+				clearInterval(timer);
+				timer = setInterval(function() {
+					var iSpeed = (iTarget - oDiv.offsetTop) / 8;
+					iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+					if(oDiv.offsetTop == iTarget) {
+						clearInterval(timer);
+					} else {
+						oDiv.style.top = oDiv.offsetTop + iSpeed + 'px';
+					}
+				}, 30)
+			}
+		</script>
+		<script>
+			$(window).scroll(function() {
+				var st = $(this).scrollTop();
+				if(st > 300) {
+					$('#div1').css('display', 'block');
+				}
+				if(st < 300) {
+					$('#div1').css('display', 'none');
+				}
+			});
+		</script>
+
+		<!-- 页脚 -->
+
+		<div class="footer" style="position:relative;float: left; clear: both; margin-top: 66px;">
+			<div class="footer_c">
+				<div class="footer_l">
+					<img src="img/fl_03.png">
+					<ul>
+						<li>
+							<a href="Index.html">首页</a>
+						</li>
+						<li>
+							<a href="AboutUs.html">关于我们</a>
+						</li>
+						<li>
+							<a href="Prodet.html">产品介绍</a>
+						</li>
+						<li>
+							<a href="Service.html">服务中心</a>
+						</li>
+						<li>
+							<a href="Brand.html">旗下品牌</a>
+						</li>
+						<li>
+							<a href="News.html">新闻资讯</a>
+						</li>
+						<li>
+							<a href="ContantUs.html">联系我们</a>
+						</li>
+					</ul><br>
+					<p style="padding-left: 26px; float: left; line-height: 26px;">伊美特(上海)环保科技股份有限公司</p>
+
+				</div>
+
+				<div class="footer_r">
+					<span>地址：上海市闵行区纪翟路1418号</span><br/>
+					<span>电话：400-820-5617   </span><br>
+					<span>Copyright © 2016 伊美特（上海）环保科技股份有限公司</span>
+					<span>沪ICP备11005546号-3</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- 页脚 End -->
+
+	</body>
+
+</html>
