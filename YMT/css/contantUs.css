@@ -1,0 +1,138 @@
+.map{
+	width: 510px;
+	height: 256px;
+	border: #CCC 2px solid;
+}
+
+.contactway {
+	height: 554px;
+}
+
+.map{
+	position: absolute;
+	right: 38px;
+	top: 86px;
+}
+
+.adress_info {
+	position: absolute;
+	left: 90px;
+	top: 106px;
+}
+
+/* css杩囨浮 */
+
+.int{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+}
+
+.home{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	opacity: 0;
+}
+
+.active .home{
+	opacity: 1;
+}
+
+.home_abroad{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	opacity: 0;
+}
+
+.active .home_abroad{
+	opacity: 1;
+}
+
+
+.lxwm{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	transition-delay:0.5s;
+	-webkit-transition-delay:0.5s;
+	opacity: 0;
+}
+
+.active .lxwm{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	transition-delay:0.5s;
+	-webkit-transition-delay:0.5s;
+	opacity: 1;
+}
+
+.int_btm,.home_btm{
+	transition: opacity margin-top 1s ease-in-out;
+	-webkit-transition: opacity margin-top 1s ease-in-out;
+	transition-delay: margin-top 0.5s;
+	-webkit-transition-delay:margin-top 0.5s;
+	transition-delay: opacity 0.5s;margin-top
+	-webkit-transition-delay:opacity 0.5s;
+	opacity: 0;
+	margin-top: 60px;
+}
+
+.active .int_btm,.active .home_btm{
+	transition: opacity margin-top 1s ease-in-out;
+	-webkit-transition: opacity margin-top 1s ease-in-out;
+	transition-delay: margin-top 0.5s;
+	-webkit-transition-delay:margin-top 0.5s;
+	transition-delay: opacity 0.5s;
+	-webkit-transition-delay:opacity 0.5s;
+	opacity: 1;
+	margin-top: 0px;
+
+}
+.int{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	opacity: 0;
+}
+
+.active .int{
+	opacity: 1;
+}
+
+.contactway{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	opacity: 0;
+}
+
+.active .contactway{
+	opacity: 1;
+}
+
+.section9 {
+	background: url(../img/contact/joinusbtm.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+#jis{
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	opacity: 0;
+	}
