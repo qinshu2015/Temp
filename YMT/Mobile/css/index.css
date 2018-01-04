@@ -1,0 +1,102 @@
+ 	/*.container img{width: 100%;}*/
+/*首页*/
+	.container p{
+		color: #000;
+	}
+	.bricont p{
+		line-height: 10px;
+	}
+	
+	.brandbor{
+		border: 1px solid #aeaeb0;
+		padding: 40px 0;
+	}
+	.homejz{  /*图片距离上面距离*/
+		margin-top: 40px;
+	}
+	.homejz a{  /*图片距离上面距离*/
+		color: #000;
+	}
+/*关于我们*/
+	.aboutpush{
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
+	.aboutpush2{
+		background: #e3ded8;
+		position: relative;
+	}
+	.aboutpush2:before{
+		content: "";
+		display: block;
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    position: absolute;
+		border-width: 400px 4000px 0 0;
+	    border-color: rgba(255, 255, 255, 0);
+	    border-top-color: #fff;
+	    left: auto;
+	    right: 0;
+	}
+	.aboutpush2 h4{
+		padding-top: 60px;
+	}
+	.aboutpush h4{
+		text-align: center;
+		font-size: 16px;
+	}
+	.aboutpush p{font-size: 13px;text-indent: 25px;line-height: 23px;}
+	.texthide{display: none;}
+    	
+/*服务中心*/
+	.servicediv{
+		padding-top: 25px;
+		margin-bottom: 20px;
+	}
+	.servicediv h4{
+		padding-top: 10px;
+	}
+	/*查看更多文字*/
+	.servicediv .couindent{
+		line-height: 30px;
+	}
+	.servicediv:before{
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+	    position: absolute;
+		border-width: 0.5px 4000px 0 0;
+	    border-color: #6e6f6f;
+	    border-top-color: #6e6f6f;
+	    left: auto;
+	    right: 0;
+	}
+/*旗下品牌*/
+		.branddiv{
+    		padding-top: 30px;
+			margin-bottom:20px;
+    	}
+    	.branddiv:after{
+    		content: "";
+			width: 0;
+			height: 0;
+			border-style: solid;
+		    position: absolute;
+			border-width: 0.5px 4000px 0 0;
+		    border-color: #dfdfdf;
+		    left: auto;
+		    right: 0;
+    	}
+    	.brandtitle span{
+    		display: block;
+    		line-height: 20px;
+    	}
+    	.brandtitle span:nth-of-type(1){
+    		padding-top: 20px;
+    		color: #000;
+    	}
+    	.brandtitle span:nth-of-type(2){
+    		color: #c8a985;
+    	}
