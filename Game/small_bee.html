@@ -239,14 +239,12 @@
 						nowLi.style.left = nowLi.offsetLeft + sX + 'px';
 						nowLi.style.top = nowLi.offsetTop + sY + 'px';
 
-						//碰撞到飞机
+					},30);
+					//碰撞到飞机
 						if( This.PZJC( This.air , nowLi ) ){
 							alert('游戏结束');
 							window.location.reload();
 						}
-
-
-					},30);
 				},
 				bindAir:function(){  //控制飞机
 					var keynum=0  //标记  当前按下的是左键还是右键
